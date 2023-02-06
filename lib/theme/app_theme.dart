@@ -10,15 +10,55 @@ class AppTheme {
         elevation: 0,
       ),
       textButtonTheme:
-          TextButtonThemeData(style: TextButton.styleFrom(primary: primary)));
+          TextButtonThemeData(style: TextButton.styleFrom(primary: primary)
+      ),
+
+      //FloatingActionButtons
+      floatingActionButtonTheme: const FloatingActionButtonThemeData(
+        backgroundColor: primary,
+        elevation: 5,
+      ),
+
+      //ElevatedButtons
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          primary: primary,
+          shape: const StadiumBorder(),
+          elevation: 0
+        )
+      )
+    
+  );
 
   static final ThemeData darkTheme = ThemeData.dark().copyWith(
       primaryColor: primary,
+      scaffoldBackgroundColor: Colors.black,
+      
+      //AppBar Theme
       appBarTheme: const AppBarTheme(
         color: primary,
         elevation: 0,
       ),
-      scaffoldBackgroundColor: Colors.black,
+
+      //textButton Theme
       textButtonTheme:
-          TextButtonThemeData(style: TextButton.styleFrom(primary: primary)));
+          TextButtonThemeData(style: TextButton.styleFrom(primary: primary)
+      ),
+
+      //FloatingActionButtons
+      floatingActionButtonTheme: const FloatingActionButtonThemeData(
+        backgroundColor: primary,
+        elevation: 5,
+      ),
+
+      //ElevatedButtons
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          primary: primary,
+          shape: const StadiumBorder(),
+          elevation: 0
+        )
+      )
+          
+  );
 }
