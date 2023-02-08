@@ -13,7 +13,8 @@ class AppRoutes {
     MenuOption(route: 'card', name: 'Cards', screen: CardScreen(), icon: Icons.chrome_reader_mode_outlined),
     MenuOption(route: 'alert', name: 'Alerts', screen: AlertScreen(), icon: Icons.add_alert_outlined),
     MenuOption(route: 'avatar', name: 'Avatar', screen: AvatarScreen(), icon: Icons.person_outline_outlined),
-    MenuOption(route: 'animated', name: 'Animated', screen: AnimatedScreen(), icon: Icons.play_circle_outline_rounded)
+    MenuOption(route: 'animated', name: 'Animated', screen: AnimatedScreen(), icon: Icons.play_circle_outline_rounded),
+    MenuOption(route: 'inputs', name: 'Inputs', screen: InputsScreen(), icon: Icons.input_rounded)
    ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

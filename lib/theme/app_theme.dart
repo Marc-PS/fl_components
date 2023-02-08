@@ -58,7 +58,11 @@ class AppTheme {
           shape: const StadiumBorder(),
           elevation: 0
         )
+      ),
+      
+      //decoration
+      inputDecorationTheme: const InputDecorationTheme(
+
       )
-          
   );
 }
