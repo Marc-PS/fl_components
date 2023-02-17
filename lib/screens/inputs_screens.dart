@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/custom_input_fields.dart';
 
 class InputsScreen extends StatelessWidget {
    
@@ -14,41 +15,18 @@ class InputsScreen extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: Column(
-            children: [
-              TextFormField(
-                //autofocus: true,
-                initialValue: '',
-                textCapitalization: TextCapitalization.words,
-                onChanged: (value) {
-                  print('$value');
-                },
-                validator: (value) {
-                  if (value == null) return 'Este campo es requerido';
-                  return value.length < 3 ? 'Minimo 3 letras' : null;
-                },
-                autovalidateMode: AutovalidateMode.onUserInteraction,
-                decoration: InputDecoration(
-                  hintText: 'Nombre del usuario',
-                  labelText: 'Nombre',
-                  helperText: 'Solo letras',
-                  counterText: '3 caracteres',
-                  suffixIcon: Icon(Icons.groups_rounded),
-                  prefixIcon: Icon(Icons.verified_user_outlined),
-                  icon: Icon(Icons.assignment_ind_outlined),
-                  /* focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.green
-                    )
-                  ),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(10),
-                      topRight: Radius.circular(10)
-                    )
-                  ) */
-                ),
+            children: const [
+              CustomInputField(labelText: 'Nombre', helperText: 'HelperText'),
+              SizedBox(height: 30,),
 
-              )
+              CustomInputField(labelText: 'Apellido', helperText: 'HelperText'),
+              SizedBox(height: 30,),
+
+              CustomInputField(labelText: 'Correo', helperText: 'HelperText', keyboardType: TextInputType.emailAddress,),
+              SizedBox(height: 30,),
+
+              CustomInputField(labelText: 'Password', helperText: 'HelperText', obscureText: true,),
+              SizedBox(height: 30,)
             ],
           ),
         ),
@@ -56,3 +34,4 @@ class InputsScreen extends StatelessWidget {
     );
   }
 }
+
