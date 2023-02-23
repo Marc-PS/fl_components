@@ -16,11 +16,11 @@ class CardScreen extends StatelessWidget {
             
             CustomCardType1(),
             SizedBox(height: 10),
-            CustomCardType2(imageUrl: 'https://i.picsum.photos/id/28/4928/3264.jpg?hmac=GnYF-RnBUg44PFfU5pcw_Qs0ReOyStdnZ8MtQWJqTfA', name: 'Un bonito paisaje',),
+            CustomCardType2(imageUrl: 'https://picsum.photos/2000/3000', name: 'Un bonito paisaje',),
             SizedBox(height: 20),
-            CustomCardType2(imageUrl: 'https://i.picsum.photos/id/566/4928/3264.jpg?hmac=DCrK7ItOD35_TnTbmrWKqy5gdeoADyVyaGmTjED8RKc',),
+            CustomCardType2(imageUrl: 'https://picsum.photos/2000/2000',),
             SizedBox(height: 20),
-            CustomCardType2(imageUrl: 'https://i.picsum.photos/id/924/4928/3264.jpg?hmac=RSOCJigqtbQbmWMZfbK1nmhAd-QDNVVsy38rSkX0gQ0',),
+            CustomCardType2(imageUrl: 'https://picsum.photos/2300/3500',),
             SizedBox(height: 100)
             
             ],
